@@ -7,17 +7,44 @@ public class Navigation : MonoBehaviour
 {
     private NavMeshAgent agent;
 
-    public GameObject target;
+    public GameObject[] path;
+    public float speed = 5f;
+
+    int currIndex = 0;
+    bool disable = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(target.transform.position);
+        if (!disable)
+        {
+            float dist = Vector3.Distance(transform.position, agent.destination);
+
+            if (dist < 2)
+            {
+                currIndex++;
+
+                if (currIndex < path.Length)
+                    agent.SetDestination(path[currIndex].transform.position);
+                else
+                    disable = true;
+            }
+        }
+    }
+
+    public void Navigate()
+    {
+        agent = GetComponent<NavMeshAgent>();
+
+        agent.speed = speed;
+        agent.SetDestination(path[currIndex].transform.position);
+
+        disable = false;
     }
 }

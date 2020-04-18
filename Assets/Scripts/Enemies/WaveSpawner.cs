@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField]
-    GameObject[] WaveEnemies;
+    GameObject[] Path, WaveEnemies;
 
     [SerializeField]
     int[] count;
@@ -32,7 +32,11 @@ public class WaveSpawner : MonoBehaviour
         yield return new WaitForSeconds(startSpawningAfter[index]);
         for(int i = 0; i < count[index]; i++)
         {
-            Instantiate(WaveEnemies[index], transform.position, Quaternion.identity);
+            GameObject enemy = Instantiate(WaveEnemies[index], transform.position, Quaternion.identity);
+            Navigation navigation = enemy.GetComponent<Navigation>();
+            navigation.path = Path;
+            navigation.Navigate();
+
             yield return new WaitForSeconds(delayBetweenSpawns[index]);
         }
     }
