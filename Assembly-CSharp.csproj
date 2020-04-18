@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Character\PlayerController.cs" />
     <Compile Include="Assets\Scripts\CursorLock.cs" />
     <Compile Include="Assets\Scripts\Enemies\Navigation.cs" />
+    <Compile Include="Assets\Scripts\Enemies\WaveSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Unity.Timeline.Editor">
