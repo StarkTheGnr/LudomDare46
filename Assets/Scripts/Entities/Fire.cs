@@ -6,11 +6,14 @@ public class Fire : MonoBehaviour
 {
     public GameObject firePoint, fireBullet;
 
-	private bool isShooting =false;
     [SerializeField]
     float fireRate = 0.5f;
 
     float lastFired = 0f;
+
+    [SerializeField]
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,8 @@ public class Fire : MonoBehaviour
     {
         if(Input.GetButton("Fire1") && (Time.time - lastFired > fireRate))
         {
-			isShooting= true;
+            anim.SetTrigger("Shoot");
+
             GameObject bullet = Instantiate(fireBullet, firePoint.transform.position, Quaternion.identity);
             Vector3 point;
 
@@ -45,7 +49,6 @@ public class Fire : MonoBehaviour
             bulletFire.Fire();
 
             lastFired = Time.time;
-            isShooting = false;
         }
     }
 }

@@ -906,6 +906,10 @@ PrefabInstance:
       propertyPath: firePoint
       value: 
       objectReference: {fileID: 58505119}
+    - target: {fileID: 170812953, guid: cf85930ee299be74686b572953b5674d, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 654129855}
     - target: {fileID: 1066364008945323228, guid: cf85930ee299be74686b572953b5674d, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.038
