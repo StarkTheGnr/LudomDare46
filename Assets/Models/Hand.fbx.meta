@@ -33,6 +33,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material.005
     second: {fileID: 2100000, guid: 549c48b8d0c401f4fb07ab0a4f89f174, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f433e59f99724b04a8788a9504692a50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: col
+    second: {fileID: 2100000, guid: f433e59f99724b04a8788a9504692a50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: orange
+    second: {fileID: 2100000, guid: 549c48b8d0c401f4fb07ab0a4f89f174, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
