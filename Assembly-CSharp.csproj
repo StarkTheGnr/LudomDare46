@@ -63,14 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Character\Bullet\BulletFire.cs" />
-    <Compile Include="Assets\Scripts\Character\Bullet\OnHitDestroy.cs" />
-    <Compile Include="Assets\Scripts\Character\Crosshair.cs" />
-    <Compile Include="Assets\Scripts\Character\Fire.cs" />
-    <Compile Include="Assets\Scripts\Character\PlayerController.cs" />
     <Compile Include="Assets\Scripts\CursorLock.cs" />
-    <Compile Include="Assets\Scripts\Enemies\Navigation.cs" />
-    <Compile Include="Assets\Scripts\Enemies\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\Entities\Bullet\BulletFire.cs" />
+    <Compile Include="Assets\Scripts\Entities\Bullet\DestroyAfter.cs" />
+    <Compile Include="Assets\Scripts\Entities\Bullet\OnHitDestroy.cs" />
+    <Compile Include="Assets\Scripts\Entities\Crosshair.cs" />
+    <Compile Include="Assets\Scripts\Entities\Enemies\Navigation.cs" />
+    <Compile Include="Assets\Scripts\Entities\Enemies\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\Entities\Fire.cs" />
+    <Compile Include="Assets\Scripts\Entities\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Entities\Stats.cs" />
     <Compile Include="Assets\Scripts\Weapons\AnimateLight.cs" />
   </ItemGroup>
   <ItemGroup>

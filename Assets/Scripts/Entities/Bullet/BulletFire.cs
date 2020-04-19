@@ -7,6 +7,10 @@ public class BulletFire : MonoBehaviour
 {
     [HideInInspector]
     public Vector3 destination;
+
+    [HideInInspector]
+    public GameObject player;
+
     public float forceStrength = 200f;
 
     Rigidbody rb;
@@ -29,5 +33,16 @@ public class BulletFire : MonoBehaviour
 
         transform.LookAt(destination);
         rb.AddRelativeForce(transform.forward * forceStrength);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Entity")
+        {
+            Stats enemyStats = collision.gameObject.GetComponent<Stats>();
+            Stats playerStats = player.GetComponent<Stats>();
+
+            enemyStats.Health -= playerStats.Damage;
+        }
     }
 }
