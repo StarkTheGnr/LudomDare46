@@ -6,6 +6,10 @@ public class Fire : MonoBehaviour
 {
     public GameObject firePoint, fireBullet;
 
+    [SerializeField]
+    float fireRate = 0.5f;
+
+    float lastFired = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +19,7 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButton("Fire1") && (Time.time - lastFired > fireRate))
         {
             GameObject bullet = Instantiate(fireBullet, firePoint.transform.position, Quaternion.identity);
             Vector3 point;
@@ -31,9 +35,14 @@ public class Fire : MonoBehaviour
                 point = ray.GetPoint(100f);
             }
 
+            bullet.transform.LookAt(point);
+
             BulletFire bulletFire = bullet.GetComponent<BulletFire>();
             bulletFire.destination = point;
+            bulletFire.player = gameObject;
             bulletFire.Fire();
+
+            lastFired = Time.time;
         }
     }
 }
