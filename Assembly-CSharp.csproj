@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4B5B0E38-7230-8708-D8E5-0A3EAA06B35E}</ProjectGuid>
+    <ProjectGuid>{D171842A-DFDF-F976-4CCD-2AD4FE9B965C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,6 +63,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Animators\SFX_AnimationModule.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Animators\SFX_DynamicShaderParameter.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Animators\SFX_LightAnimator.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Animators\SFX_ShaderAnimator.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\AreaProtector\SFX_AreaProtectorController.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Beam\SFX_BeamWeapon.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Cloner\SFX_MotionCloner.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Collisions\SFX_ColliderCollisionDetector.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Collisions\SFX_CollisionPoint.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Collisions\SFX_DistanceCollisionDetector.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Collisions\SFX_ICollisionsProvider.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\ControlledObjects\SFX_ComponentsStartupController.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\ControlledObjects\SFX_ControlledObject.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\EnergyShield\SFX_EnergyShieldController.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Engine\SFX_EngineController.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Fx\SFX_FxObject.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Fx\SFX_FxRotationType.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Healing\SFX_HealingAreaController.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Instancer\SFX_CollisionBasedFxInstancer.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Instancer\SFX_FxObjectInstancer.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Instancer\SFX_IEmitterKeeper.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Missile\SFX_PhysicsHomingMissile.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Missile\SFX_PhysicsHomingMissileLauncher.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Motion\SFX_LerpMotion.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Motion\SFX_PhysicsMotion.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Motion\SFX_Rotator.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Mouse\SFX_LookAtMouse.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Mouse\SFX_MouseControlledObjectLauncher.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\ParticleSystem\SFX_ParticleSystemMeshAttacher.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Projectile\SFX_ProjectileLauncher.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Projectile\SFX_SimpleProjectile.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Projectile\SFX_SimpleProjectileWeapon.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Scanner\SFX_BeamScannerController.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Scanner\SFX_TopographicScannable.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Scanner\SFX_TopographicScannerController.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Target\SFX_ObjectFinder.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Target\SFX_TargetAttacher.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Target\SFX_TargetMarker.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\Materials\SFX_MaterialAdder.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\Materials\SFX_MaterialReplacer.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\Materials\SFX_MaterialUtil.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\SFX_ComponentUtil.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\SFX_GroundAttacher.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\SFX_InvokeUtil.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\SFX_ObjectAreaFinder.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Scripts\Utils\SFX_SelfDestroyer.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\CursorLock.cs" />
     <Compile Include="Assets\Scripts\Entities\Bullet\BulletFire.cs" />
@@ -77,12 +123,57 @@
     <Compile Include="Assets\Scripts\Weapons\AnimateLight.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Mask\SFX_AdjustMask.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Mask\SFX_AlphaBlendMask.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Flicker\SFX_MainTexFlicker.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Particle\SFX_Alpha Blended Soft Tex.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Cutout\SFX_AlphaBlendNoiseCutout.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Distortion\SFX_NoiseDistortionAdjust.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Scanner\SFX_ScannerDistortion.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Shield\SFX_EnergyShield.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Scripts Readme.txt" />
      <None Include="Assets\Scripts\Glass.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\EnergyWall\SFX_LaserWall.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Particle\SFX_Particle HDR.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\EnergyWall\SFX_EnergyWallDouble.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Hologram\SFX_HologramDissolve.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Hologram\SFX_Hologram.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Scanner\SFX_TopographicScanner.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Scanner\SFX_ScannerGlith.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Cutout\SFX_NoiseCutOut.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Scanner\SFX_Scannable.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\EnergyWall\SFX_EnergyPlane.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Beam\SFX_Beam.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Distortion\SFX_Distortion.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Surface\SFX_SurfaceSimple.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Distortion\SFX_DistortionFresnel.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Readme.txt" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Shaders Readme.txt" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\EnergyWall\SFX_EnergyWall.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Flicker\SFX_SurfaceFlicker.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Change Log.txt" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Area\SFX_Area.shader" />
+     <None Include="Assets\AssetStoreOriginals\Sci-Fi VFX\Resources\Shaders\Shield\SFX_ObjectShield.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>Library\ScriptAssemblies\Unity.ProGrids.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
@@ -99,29 +190,14 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids">
-      <HintPath>Library\ScriptAssemblies\Unity.ProGrids.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.0b5\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
