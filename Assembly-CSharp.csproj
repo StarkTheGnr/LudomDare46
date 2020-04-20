@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D171842A-DFDF-F976-4CCD-2AD4FE9B965C}</ProjectGuid>
+    <ProjectGuid>{4B5B0E38-7230-8708-D8E5-0A3EAA06B35E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scripts\Entities\Enemies\Navigation.cs" />
     <Compile Include="Assets\Scripts\Entities\Enemies\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\Entities\Fire.cs" />
+    <Compile Include="Assets\Scripts\Entities\MoveToAndBack.cs" />
     <Compile Include="Assets\Scripts\Entities\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Entities\Stats.cs" />
     <Compile Include="Assets\Scripts\Weapons\AnimateLight.cs" />
