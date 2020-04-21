@@ -49,9 +49,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   WaveEnemies:
-  - {fileID: 8200450340599513777, guid: d39ecfea78941d44a8373ce2472a6ab2, type: 3}
-  count: 01000000
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8226676907585710049, guid: 36e1f13230403c3408fe6b2b2b3a4c00, type: 3}
+  count: 0a0000001400000005000000
   startSpawningAfter:
   - 3
+  - 3
+  - 15
   delayBetweenSpawns:
-  - 2
+  - 0.5
+  - 0.5
+  - 0.5

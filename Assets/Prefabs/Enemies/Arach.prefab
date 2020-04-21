@@ -1244,8 +1244,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5501080162946716497}
   - component: {fileID: 1721266075657266270}
-  - component: {fileID: 1608597296335885783}
-  - component: {fileID: 1608597296335885782}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1378,33 +1376,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.010487858, y: 0.05430205, z: 0.0007672161}
     m_Extent: {x: 0.09686153, y: 0.10849236, z: 0.12021558}
   m_DirtyAABB: 0
---- !u!136 &1608597296335885783
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5059153805920991080}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.02065475
-  m_Height: 0.10476002
-  m_Direction: 2
-  m_Center: {x: -0.00033583658, y: -4.614243e-10, z: 0.033153795}
---- !u!65 &1608597296335885782
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5059153805920991080}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.1005044, y: 0.08543366, z: 0.0328295}
-  m_Center: {x: -0.00059912965, y: -0.0029454161, z: 0.008003088}
 --- !u!1 &5166161264203234492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2226,9 +2197,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4931545871244908018}
   - component: {fileID: 8384191190071356502}
+  - component: {fileID: 2290226125181417177}
+  - component: {fileID: 5831518529108996391}
+  - component: {fileID: 5156967376696081300}
+  - component: {fileID: 2582299198734354788}
+  - component: {fileID: 5830704803293980605}
   m_Layer: 0
   m_Name: Arach
-  m_TagString: Untagged
+  m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2268,6 +2244,87 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!195 &2290226125181417177
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226676907585710049}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &5831518529108996391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226676907585710049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfec208ae16b98f49b576c2a3aa6adaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: []
+  speed: 5
+--- !u!65 &5156967376696081300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226676907585710049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.979391, y: 6.500015, z: 17.372017}
+  m_Center: {x: 0.20964079, y: 2.7500072, z: -0.08900695}
+--- !u!136 &2582299198734354788
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226676907585710049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.390792
+  m_Height: 16.878805
+  m_Direction: 1
+  m_Center: {x: 7.017938e-14, y: 12.031234, z: 0.28604734}
+--- !u!114 &5830704803293980605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8226676907585710049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f60e8d697253f64cb167bfa84e12d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dyingHandler: {fileID: 0}
+  _maxhealth: 500
+  _health: 500
+  _damage: 100
+  _isDead: 0
+  audioSource: {fileID: 8716748597141884191, guid: ceeb190fe9a9e9548b14a816b00c832b, type: 3}
 --- !u!1 &8336667909153910409
 GameObject:
   m_ObjectHideFlags: 0

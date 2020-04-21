@@ -6,6 +6,8 @@ public class Fire : MonoBehaviour
 {
     public GameObject firePoint, fireBullet;
 
+    public AudioSource gunFire;
+
     [SerializeField]
     float fireRate = 0.5f;
 
@@ -47,6 +49,7 @@ public class Fire : MonoBehaviour
             bulletFire.destination = point;
             bulletFire.player = gameObject;
             bulletFire.Fire();
+            gunFire.Play();
 
             lastFired = Time.time;
         }

@@ -8,10 +8,13 @@ public class WaveSpawner : MonoBehaviour
     GameObject[] Path, WaveEnemies;
 
     [SerializeField]
-    int[] count;
+    public int[] count;
 
     [SerializeField]
     float[] startSpawningAfter, delayBetweenSpawns;
+
+    [SerializeField]
+    Vector3[] posOffset;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +35,7 @@ public class WaveSpawner : MonoBehaviour
         yield return new WaitForSeconds(startSpawningAfter[index]);
         for(int i = 0; i < count[index]; i++)
         {
-            GameObject enemy = Instantiate(WaveEnemies[index], transform.position, Quaternion.identity);
+            GameObject enemy = Instantiate(WaveEnemies[index], transform.position + posOffset[index], Quaternion.identity);
             Navigation navigation = enemy.GetComponent<Navigation>();
             navigation.path = Path;
             navigation.Navigate();

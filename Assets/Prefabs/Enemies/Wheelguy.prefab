@@ -681,9 +681,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dyingHandler: {fileID: 0}
-  _maxhealth: 100
-  _health: 100
+  _maxhealth: 200
+  _health: 200
   _damage: 100
+  _isDead: 0
+  audioSource: {fileID: 5038274937767883622, guid: 8b3f8538d2746e449b07a16ebe9b1769, type: 3}
 --- !u!1 &5259418005759161772
 GameObject:
   m_ObjectHideFlags: 0

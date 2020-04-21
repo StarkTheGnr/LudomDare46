@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     Vector3 moveDir = Vector3.zero;
 
+    public AudioSource jumpSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetButton("Jump"))
             {
+                jumpSound.Play();
                 moveDir.y = jumpPower;
             }
         }

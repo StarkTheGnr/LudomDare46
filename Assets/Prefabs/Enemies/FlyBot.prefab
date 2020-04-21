@@ -1106,6 +1106,8 @@ MonoBehaviour:
   _maxhealth: 100
   _health: 100
   _damage: 100
+  _isDead: 0
+  audioSource: {fileID: 1011193387508276928, guid: 713cde4a36a0a664ba950f4ce2d5cb39, type: 3}
 --- !u!114 &1301380991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,7 +1141,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1
+  m_BaseOffset: 12.9
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!1 &8304124714948916948
