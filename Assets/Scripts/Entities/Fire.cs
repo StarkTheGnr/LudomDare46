@@ -9,6 +9,9 @@ public class Fire : MonoBehaviour
     public AudioSource gunFire;
 
     [SerializeField]
+    LayerMask layerToHit;
+
+    [SerializeField]
     float fireRate = 0.5f;
 
     float lastFired = 0f;
@@ -34,7 +37,7 @@ public class Fire : MonoBehaviour
 
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             RaycastHit hit;
-            if(Physics.Raycast(ray, out hit, 100f))
+            if(Physics.Raycast(ray, out hit, 100f, layerToHit))
             {
                 point = hit.point;
             }

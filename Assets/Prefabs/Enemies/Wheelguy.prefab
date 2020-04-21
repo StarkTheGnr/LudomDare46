@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425713031522576253}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upper_arm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5106424921220654694}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Clamp-2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5504361660396066979}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wheel_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1316221222809276849}
   - component: {fileID: 4096156324279129626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 405318279570752081}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1040891373234940169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6547037282827295369}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: metarig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2427419141885797043}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Clamp-2.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1543264785745451481}
   - component: {fileID: 7241912870374341318}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8103780158646957514}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: forearm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7394598918103143098}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6877993496337243215}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,8 @@ GameObject:
   - component: {fileID: 3376271794795414739}
   - component: {fileID: 3376271794795414740}
   - component: {fileID: 3376271794795414741}
-  m_Layer: 0
+  - component: {fileID: 1079100867822876506}
+  m_Layer: 10
   m_Name: Wheelguy
   m_TagString: Entity
   m_Icon: {fileID: 0}
@@ -667,7 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: []
-  speed: 5
+  speed: 2.5
 --- !u!114 &3376271794795414741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +687,22 @@ MonoBehaviour:
   _damage: 100
   _isDead: 0
   audioSource: {fileID: 5038274937767883622, guid: 8b3f8538d2746e449b07a16ebe9b1769, type: 3}
+--- !u!54 &1079100867822876506
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315361721866041057}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5259418005759161772
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5570799228662312439}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5296963863224261975}
   - component: {fileID: 8404120054125826295}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +837,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6415566592079464127}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Clamp-2.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4765897585867130681}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Clamp-2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2355397879283996403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: forearm.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -913,7 +930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3144160860040976}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Clamp-1.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7346439582937517654}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Clamp-1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -974,7 +991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8468653662815516066}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: upper_arm.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,7 +1022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8095467915973964772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: hand.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9102020447435865829}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Spring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8013240972606382245}
   - component: {fileID: 8420032103219076110}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Circle.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}

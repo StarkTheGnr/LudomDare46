@@ -22,15 +22,17 @@ public class LifeHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Entity")
+        if(other.gameObject.layer == 10)
         {
-            Destroy(other.gameObject);
+            Stats stats = other.gameObject.GetComponent<Stats>();
+            stats.Health = 0;
 
             lives--;
 
             if(lives <= 0)
             {
                 EndGame();
+                CloseGameAfter(3);
             }
         }
     }
@@ -38,5 +40,11 @@ public class LifeHandler : MonoBehaviour
     void EndGame()
     {
         canvas.SetActive(true);
+    }
+
+    IEnumerator CloseGameAfter(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Application.Quit();
     }
 }

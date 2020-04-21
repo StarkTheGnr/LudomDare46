@@ -13,6 +13,8 @@ public class BulletFire : MonoBehaviour
 
     public float forceStrength = 200f;
 
+    List<GameObject> hits = new List<GameObject>();
+
     Rigidbody rb;
 
     // Start is called before the first frame update
@@ -37,12 +39,17 @@ public class BulletFire : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Entity")
+        if (collision.gameObject.tag == "Entity")
         {
-            Stats enemyStats = collision.gameObject.GetComponent<Stats>();
-            Stats playerStats = player.GetComponent<Stats>();
+            if (hits.IndexOf(collision.gameObject) == -1)
+            {
+                hits.Add(collision.gameObject);
 
-            enemyStats.Health -= playerStats.Damage;
+                Stats enemyStats = collision.gameObject.GetComponent<Stats>();
+                Stats playerStats = player.GetComponent<Stats>();
+
+                enemyStats.Health -= playerStats.Damage;
+            }
         }
     }
 }
