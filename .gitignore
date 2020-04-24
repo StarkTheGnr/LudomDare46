@@ -68,3 +68,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/UMotionEditor/
+Assets/UMotionExamples/
+UMotionData/
+Assets/umotion_project.asset
+Assets/umotion_project.asset.meta
+Assets/UMotionEditor.meta
+Assets/UMotionExamples.meta
