@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController cc;
+    private Animator anim;
 
     [SerializeField]
     private float speed = 5f, mouseSensitivity = 5f, jumpPower = 5f, gravity = -9.8f, maxSpeed = 5;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -43,6 +45,9 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetButton("Jump"))
             {
+                anim.SetBool("Running", false);
+                anim.SetBool("Fire", false);
+
                 jumpSound.Play();
                 moveDir.y = jumpPower;
             }
@@ -61,6 +66,17 @@ public class PlayerController : MonoBehaviour
 
             movement = Vector3.ClampMagnitude(movement, maxSpeed);
             moveDir = new Vector3(movement.x, moveDir.y, movement.z);
+        }
+
+        if (moveDir.x != 0 || moveDir.z != 0)
+        {
+            anim.SetBool("Fire", false);
+
+            anim.SetBool("Running", true);
+        }
+        else
+        {
+            anim.SetBool("Running", false);
         }
 
         moveDir.y += gravity * Time.deltaTime;

@@ -48,7 +48,8 @@ public class Fire : MonoBehaviour
 
         if (Input.GetButton("Fire1") && (Time.time - lastFired > fireRate))
         {
-            anim.SetTrigger("Shoot");
+            anim.SetTrigger("FireAgain");
+            anim.SetBool("Fire", true);
 
             GameObject bullet = Instantiate(fireBullet, firePoint.transform.position, Quaternion.identity);
             bullet.transform.LookAt(point);
