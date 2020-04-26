@@ -9,6 +9,9 @@ public class Fire : MonoBehaviour
     public AudioSource gunFire;
 
     [SerializeField]
+    Transform Gun;
+
+    [SerializeField]
     LayerMask layerToHit;
 
     [SerializeField]
@@ -28,24 +31,26 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButton("Fire1") && (Time.time - lastFired > fireRate))
+        Vector3 point;
+
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
+        if(Physics.Raycast(ray, out hit, 100f, layerToHit))
+        {
+            point = hit.point;
+        }
+        else
+        {
+            point = ray.GetPoint(100f);
+        }
+
+        Gun.LookAt(point);
+
+        if (Input.GetButton("Fire1") && (Time.time - lastFired > fireRate))
         {
             anim.SetTrigger("Shoot");
 
             GameObject bullet = Instantiate(fireBullet, firePoint.transform.position, Quaternion.identity);
-            Vector3 point;
-
-            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            RaycastHit hit;
-            if(Physics.Raycast(ray, out hit, 100f, layerToHit))
-            {
-                point = hit.point;
-            }
-            else
-            {
-                point = ray.GetPoint(100f);
-            }
-
             bullet.transform.LookAt(point);
 
             BulletFire bulletFire = bullet.GetComponent<BulletFire>();
