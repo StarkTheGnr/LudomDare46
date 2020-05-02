@@ -12,9 +12,12 @@ public class OnHitDestroy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Quaternion rot = (spawnWithColliderRotation) ? collision.gameObject.transform.rotation : transform.rotation;
-        GameObject obj = Instantiate(toSpawn, collision.GetContact(0).point, Quaternion.identity);
+        if (collision.gameObject.tag == "Entity" || collision.gameObject.tag == "Environment")
+        {
+            Quaternion rot = (spawnWithColliderRotation) ? collision.gameObject.transform.rotation : transform.rotation;
+            GameObject obj = Instantiate(toSpawn, collision.GetContact(0).point, Quaternion.identity);
 
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 }

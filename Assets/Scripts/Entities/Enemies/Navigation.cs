@@ -24,7 +24,9 @@ public class Navigation : MonoBehaviour
     {
         if (!disable)
         {
-            float dist = Vector3.Distance(transform.position, agent.destination);
+            Vector3 objPos = new Vector3(transform.position.x, 0, transform.position.z);
+            Vector3 destPos = new Vector3(agent.destination.x, 0, agent.destination.z);
+            float dist = Vector3.Distance(objPos, destPos);
 
             if (dist < 2)
             {
